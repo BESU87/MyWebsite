@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sage Training Institution - Course Registration</title>
+  <style>
+    body {
+        background-color : #5a5656; 
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: rgb(26, 25, 24);
+        text-align: center;
+        padding: 20px;
+    }
+   header h1{
+        font-size: 36pt;
+        color: teal;
+   }
+   header p{
+        color:green;
+   }
+   nav{
+    background-color: gray;
+    padding: 20px;
+    
+   }
+   nav h2 {
+    color: white;
+   }
+   nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+   }
+   nav ul li a:hover{
+    color: azure;
+    
+   }
+
+   
+  </style>
+</head>
+<body>
+
+  <!-- Page Header -->
+  <header>
+    <h1 style="color: white"> Sage Training Institution</h1>
+    <p>Empowering you with modern web development skills!</p>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="#courses">Available Courses</a></li>
+      <li><a href="#schedule">Course Schedule</a></li>
+      <li><a href="#method">Learning Methods</a></li>
+      <li><a href="#register">Register</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section: Course Offerings -->
+  <section id="courses">
+    <h2>Our Courses</h2>
+
+    <ul>
+      <li>HTML & CSS Basics</li>
+      <li>JavaScript Fundamentals</li>
+      <li>Responsive Web Design</li>
+    </ul>
+
+    <h3>Course Descriptions</h3>
+    <dl>
+      <dt>HTML & CSS</dt>
+      <dd>Learn how to structure and style your websites.</dd>
+      <dt>JavaScript</dt>
+      <dd>Bring interactivity to your web pages.</dd>
+    </dl>
+
+    <!-- Abbreviation and Semantic Text -->
+    <p>All courses follow the latest <abbr title="World Wide Web Consortium">W3C</abbr> standards and include practical labs.</p>
+  </section>
+
+  <!-- Section: Timetable with Tables -->
+  <section id="schedule">
+    <h2>Weekly Schedule</h2>
+
+    <table border="1">
+      <tr>
+        <th rowspan="2">Day</th>
+        <th colspan="2">Sessions</th>
+      </tr>
+      <tr>
+        <th>Morning</th>
+        <th>Afternoon</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>HTML Basics</td>
+        <td>CSS Layout</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td colspan="2">JavaScript Deep Dive</td>
+      </tr>
+    </table>
+
+    <!-- Time and Mark Example -->
+    <p>The next batch starts on <time datetime="2025-06-01">June 1, 2025</time>. <mark>Early registration ends soon!</mark></p>
+  </section>
+
+  <!-- Section: Learning Methods -->
+  <section id="method">
+    <h2>How You’ll Learn</h2>
+
+    <div>
+      <p>At Sage Training Institution, our approach is <strong>practical</strong> and <em>step-by-step</em>.</p>
+    </div>
+
+    <p>Start <span>today</span> and learn by doing!</p>
+
+    <h3>Learning Steps</h3>
+    <ol>
+      <li>Watch the tutorial videos</li>
+      <li>Complete hands-on exercises</li>
+      <li>Submit mini-projects</li>
+      <li>Receive feedback from instructors</li>
+      <li>Build your final portfolio</li>
+    </ol>
+
+    <!-- Code, Kbd, and Samp Example -->
+    <p>Example code: <code>document.querySelector('#submit').click();</code></p>
+    <p>To refresh the page, press <kbd>Ctrl</kbd> + <kbd>R</kbd></p>
+    <p>Sample output: <samp>Registration successful!</samp></p>
+  </section>
+
+  <!-- Section: Form Registration -->
+  <section id="register">
+    <h2>Register for a Course</h2>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Selection</legend>
+
+        <p>Which course(s) do you want to enroll in?</p>
+        <input type="checkbox" id="course1" name="courses" value="htmlcss">
+        <label for="course1">HTML & CSS</label>
+        <input type="checkbox" id="course2" name="courses" value="js">
+        <label for="course2">JavaScript</label><br><br>
+
+        <label for="location">Preferred Learning Center:</label><br>
+        <select id="location" name="location">
+          <option value="addis">Addis Ababa</option>
+          <option value="hawassa">Hawassa</option>
+          <option value="online">Online</option>
+        </select><br><br>
+
+        <label for="comments">Any Questions?</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+      </fieldset>
+
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+  <!-- Section: Resources (Advanced HTML additions) -->
+  <section id="resources">
+    <h2>Extra Learning Resources</h2>
+
+    <!-- Details and Summary -->
+    <details>
+      <summary>What should I bring to class?</summary>
+      <p>You’ll need a laptop and stable internet connection. Notes and materials will be provided.</p>
+    </details>
+
+    <!-- Progress and Meter -->
+    <p>Registration progress: <progress value="70" max="100"></progress></p>
+    <p>Seats Filled: <meter value="0.7">70%</meter></p>
+
+    <!-- Figure and Figcaption -->
+    <figure>
+      <img src="https://via.placeholder.com/300x150" alt="Web development class">
+      <figcaption>Live web development session at our main campus</figcaption>
+    </figure>
+
+    <!-- Iframe -->
+    <p>Watch our introduction video:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" title="Intro to HTML" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@sage.edu.et">info@sage.edu.et</a></p>
+    <p>Phone: +251 911 123 456</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sage Training Institution. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
