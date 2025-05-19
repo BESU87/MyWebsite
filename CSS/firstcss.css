@@ -1,0 +1,115 @@
+
+body { 
+    background-color : #5a5656; 
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgb(26, 25, 24);
+    text-align: center;
+    padding: 20px;
+}
+h2::first-letter{
+    color: blueviolet;
+}
+header h1{
+    font-size: 36pt;
+    color: teal;
+}
+header p{
+    color:green;
+}
+nav{
+background-color: gray;
+padding: 20px;
+
+}
+nav h2 {
+color: white;
+}
+nav ul li{
+list-style: none;
+display: inline-block;
+margin: 10px;
+}
+nav ul li a:hover{
+color: azure;
+
+}
+section {
+margin: 20px;
+padding: 20px;
+}
+
+#courses { 
+background-color: white;
+margin: 20px;
+padding: 20px;
+
+}
+#courses dl dt{
+font-weight: bold;
+}
+
+#courses p{
+color: green;
+}
+#schedule {
+background-color: rgb(181, 227, 241);
+margin: 20px;
+padding: 20px;
+}
+table{
+width: 100%;
+border: 1px color(srgb red green blue);
+border-collapse: collapse;
+}
+table tr td{
+padding: 10px;
+
+}
+#schedule p{
+color: green;
+}
+
+#method{
+background-color: beige;
+border-radius: 10px;
+
+}
+#method h2{
+
+border-bottom: 1px solid black;
+margin-bottom: 10px;
+}
+#register {
+background-color: aliceblue;
+border-radius: 10px;
+}
+#register p{
+color: green;
+}
+#register form input[type="text"]{
+border: 2px solid red ;
+width:50%
+}
+#register form input[type="email"]{
+border: 2px solid yellow  ;
+width: 50%;
+}
+
+#resources{
+background-color: azure;
+}
+#resources p{
+color: green;
+}
+
+#contact{
+background-color: blanchedalmond;
+}
+footer p{
+background-color: white;
+margin: 20px;
+}
+
