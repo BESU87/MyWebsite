@@ -1,0 +1,64 @@
+header{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #008080;
+}
+header h1{
+    font-family:'Times New Roman', Times, serif ;
+    color: white;
+    text-align: center;
+}
+section{
+    margin: 20px;
+    padding: 20px;
+
+}
+ header p{
+    text-align: center;
+    color: white;
+ }
+
+ .about {
+    margin: 20px;
+    padding: 20px;
+
+ }
+ .about h2{
+    border-bottom: solid 1px black;
+ }
+
+ .skills h2{
+
+    border-bottom: solid 1px black;
+
+ }
+ .skills ul li{
+    background-color: #e0f7fa;
+    list-style: none;
+    display: inline;
+    padding: 20px;
+
+ }
+
+ .projects h2 {
+    border-bottom: solid 1px black;
+
+ }
+ .project-card  {
+    background-color: beige;
+    border-left:solid 2px #008080;
+    transition: 0.3s;
+    padding-left: 10px;
+    
+ }
+ .project-card:hover{
+    transform: translateX(50px);
+    
+ }
+ 
+ footer{
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+ }
