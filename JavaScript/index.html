@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+
+
 <section id="Controlflow">
     
     <h1>Control Structures</h1>
@@ -14,6 +16,16 @@
     <pre id="controlOutput"> 
 
     </pre>
+</section>
+
+<section id="Form">
+    <h2>Form handling</h2>
+    <form id="demoForm" name="nameForm">
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <button type="submit">submit</button>
+    </form> 
+    <p id="formOutput"></p>
+
 </section>
 
     <script>
@@ -61,6 +73,14 @@
            //console.log(output)
 
         }
+       document.getElementById('demoForm').addEventListener('submit',function(e){
+        e.preventDefault();
+
+         let value=document.getElementById("name").value;
+         document.getElementById('formOutput').textContent= `Hello, ${value}`;
+       })
+      
+       
         
     </script>
 </body>
