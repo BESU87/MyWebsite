@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<section id="Controlflow">
+    
+    <h1>Control Structures</h1>
+    <button onclick="controlStructure()">Show Controls</button>
+
+    <pre id="controlOutput"> 
+
+    </pre>
+</section>
+
+    <script>
+        function controlStructure()
+        {
+            var x=4;
+            var output ="";
+
+            if( x>5){
+                //console.log(" Number is greater than 5")
+                output=" Number is greater than 5";
+            }
+            else{
+                //console.log("Number is less than five")
+                output ="Number is less than five\n";
+            }
+          
+
+
+            let fruit =["apple", "banana","orange","pinapple"];
+            switch(fruit[0]){
+                case "apple": output += `Fruit is ${fruit[0]}\n`; break;
+                case "banana": output += "Fruit is banana"; break;
+                case "orange": output += "Fruit is orange"; break;
+                case "Pinapple":output += "Fruit is pinapple"; break;
+                default: output += "Unknown fruit\n";
+            }
+
+            for(var i=0; i<3; i++){
+                output+= `For loop count: ${i}\n`;
+            }
+
+            var j=0;
+            while(j<2){
+                output += `while loop count: ${j}\n`;
+                j++;
+            }
+            do{
+                output += `Do while count: ${j}\n`;
+                j++;
+
+            }while(j < 2);
+
+            document.getElementById("controlOutput").textContent=output;
+           //console.log(output)
+
+        }
+        
+    </script>
+</body>
+</html>
