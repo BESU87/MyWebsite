@@ -2,6 +2,11 @@ const form = document.getElementById("studentform");
 const nameInput = document.getElementById("Student");
 const listItem = document.getElementById("studentList");
 
+const form2= document.getElementById("nameOf");
+const nameInput2 = document.getElementById("namel");
+const listColor = document.getElementById("color");
+const listItem1 = document.getElementById("colors")
+
 
 let sutdents = [];
 
@@ -19,5 +24,21 @@ form.addEventListener("submit", function(e){ e.preventDefault();
     nameInput.value="";
 
 }
+
+})
+
+form2.addEventListener("submit", function(e){e.preventDefault();
+
+    const color =listColor.value.trim();
+    const name2 = nameInput2.value.trim();
+    const greet =document.getElementById("Greeting");
+
+    greet.innerHTML=`Hello, ${name2} your favorite color is ${color}`;
+    const li = document.createElement("li");
+    li.textContent = color;
+    listItem1.appendChild(li);
+
+    nameInput2.value="";
+    listColor.value="";
 
 })
