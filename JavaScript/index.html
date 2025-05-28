@@ -27,8 +27,20 @@
     <p id="formOutput"></p>
 
 </section>
+<section id="Execersie">
+    <h2>Student Registration</h2>
+    <form id="studentform" >
+        <input type="text" id="Student" placeholder="Entersutdent name here" required>
+        <button type="submit">Add Student</button>
 
-    <script>
+    </form>
+    <ul id="studentList">
+
+    </ul>
+
+</section>
+
+    <script src="java.js">
         function controlStructure()
         {
             var x=4;
@@ -79,6 +91,8 @@
          let value=document.getElementById("name").value;
          document.getElementById('formOutput').textContent= `Hello, ${value}`;
        })
+
+       
       
        
         
