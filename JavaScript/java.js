@@ -42,3 +42,25 @@ form2.addEventListener("submit", function(e){e.preventDefault();
     listColor.value="";
 
 })
+
+
+let product = {
+
+    productName: "laptop",
+    quantity : 50,
+    price:15000,
+
+}
+
+var pro =document.getElementById("dis");
+
+let display = [product.productName, product.price,product.quantity]; 
+console.log(display);
+
+
+for(var i=0; i < display.length; i++){
+    let li =document.createElement("li");
+    li.textContent = display[i];
+    pro.appendChild(li);
+  }
+
