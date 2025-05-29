@@ -50,7 +50,22 @@ let product = {
     quantity : 50,
     price:15000,
 
+};
+
+function productC(pN, q, p){
+    this.productName=pN;
+    this.quantity=q;
+    this.price=p;
+
 }
+
+productC.prototype.ExpDate = "22-02-2026";
+
+var anotherDisplay = new productC("Acer",15,2500,"24/02/2025");
+document.write(anotherDisplay.ExpDate+"\n");
+
+//let product2=Object.create(product);
+
 
 var pro =document.getElementById("dis");
 
@@ -63,4 +78,5 @@ for(var i=0; i < display.length; i++){
     li.textContent = display[i];
     pro.appendChild(li);
   }
-
+//This an cout for java script or sout like java
+document.write(product.productName);
